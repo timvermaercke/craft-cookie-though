@@ -1,0 +1,173 @@
+{% import '_includes/forms' as forms %}
+
+<h1>
+  Header
+</h1>
+
+<p>
+  This contains the values that are show in the banner of the cookie though modal
+</p>
+
+{{ forms.textField({
+    label: 'Title',
+    id: 'headerTitle',
+    name: 'headerTitle',
+    value: settings['headerTitle'],
+    errors: settings.getErrors('headerTitle'),
+}) }}
+
+{{ forms.textField({
+    label: 'Subtitle',
+    id: 'headerSubTitle',
+    name: 'headerSubTitle',
+    value: settings['headerSubTitle'],
+    errors: settings.getErrors('headerSubTitle'),
+}) }}
+
+{{ forms.textareaField({
+    label: 'Description',
+    id: 'headerDescription',
+    name: 'headerDescription',
+    value: settings['headerDescription'],
+    errors: settings.getErrors('headerDescription'),
+}) }}
+
+
+<h1>
+  Labels
+</h1>
+
+{{ forms.textField({
+    label: 'Essential label',
+    instructions: 'This is the label that will be displayed instead of the slider if essential cookies are present.',
+    id: 'essentialLabel',
+    name: 'essentialLabel',
+    value: settings['essentialLabel'],
+    errors: settings.getErrors('essentialLabel'),
+}) }}
+
+{{ forms.textField({
+    label: 'Customize label',
+    instructions: 'The label that is shown on the toggleButton for the policies.',
+    id: 'customizeLabel',
+    name: 'customizeLabel',
+    value: settings['customizeLabel'],
+    errors: settings.getErrors('customizeLabel'),
+}) }}
+
+<h2>
+  Permission labels
+</h2>
+
+<p>
+  These are the labels that are displayed on the buttons to accept or deny the preferences.
+</p>
+
+{{ forms.textField({
+    label: 'Accept label',
+    instructions: 'The value of the accept button when a user has customised some of the policies.',
+    id: 'permissionLabelsAccept',
+    name: 'permissionLabelsAccept',
+    value: settings['permissionLabelsAccept'],
+    errors: settings.getErrors('permissionLabelsAccept'),
+}) }}
+
+{{ forms.textField({
+    label: 'Accept all label',
+    instructions: 'The value of the accept button when a user accepts all policies.',
+    id: 'permissionLabelsAcceptAll',
+    name: 'permissionLabelsAcceptAll',
+    value: settings['permissionLabelsAcceptAll'],
+    errors: settings.getErrors('permissionLabelsAcceptAll'),
+}) }}
+
+{{ forms.textField({
+    label: 'Decline label',
+    instructions: 'The value of the decline button.',
+    id: 'permissionLabelsDecline',
+    name: 'permissionLabelsDecline',
+    value: settings['permissionLabelsDecline'],
+    errors: settings.getErrors('permissionLabelsDecline'),
+}) }}
+
+
+<h1>
+  Cookie policy
+</h1>
+
+<p>
+  An optional object that contains the values used to link a user to the cookie policy
+</p>
+
+{{ forms.textField({
+    label: 'Cookie policy url',
+    instructions: 'Link to a pdf or website explaining the complete cookie policy.',
+    id: 'cookiePolicyUrl',
+    name: 'cookiePolicyUrl',
+    value: settings['cookiePolicyUrl'],
+    errors: settings.getErrors('cookiePolicyUrl'),
+}) }}
+
+{{ forms.textField({
+    label: 'Cookie policy label',
+    instructions: 'Text that is used for the link.',
+    id: 'cookiePolicyLabel',
+    name: 'cookiePolicyLabel',
+    value: settings['cookiePolicyLabel'],
+    errors: settings.getErrors('cookiePolicyLabel'),
+}) }}
+
+<h1>
+  Policies
+</h1>
+
+<p>
+  Policies of type
+  <strong>
+    <code>essential</code>
+  </strong>
+  can not be disabled.
+</p>
+
+{{
+    forms.editableTable({
+        label: 'Policies',
+        name: 'policies',
+        id: 'policies',
+        rows: settings['policies'],
+        cols: [
+            {
+                type: 'text',
+                heading: 'ID'
+            },
+            {
+                type: 'text',
+                heading: 'Label',
+            },
+            {
+                type: 'text',
+                heading: 'Category',
+            },
+            {
+                type: 'text',
+                heading: 'Description',
+            },
+        ],
+        addRowLabel: 'Add policy',
+    })
+}}
+
+<p></p>
+
+<h1>
+  Advanced
+</h1>
+
+{{ forms.textField({
+    label: 'Cookie preference key',
+    instructions: 'This is an an optional string that allows the developer to specify the name of the cookie that stores the user preferences.',
+    id: 'cookiePreferenceKey',
+    name: 'cookiePreferenceKey',
+    value: settings['cookiePreferenceKey'],
+    errors: settings.getErrors('cookiePreferenceKey'),
+}) }}
