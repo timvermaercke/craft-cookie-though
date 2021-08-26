@@ -5,9 +5,9 @@ namespace timvermaercke\cookiethough\controllers;
 use \timvermaercke\cookiethough\CookieThough;
 use craft\web\Controller;
 
-class DefaultController extends Controller
+class ConfigController extends Controller
 {
-  protected $allowAnonymous = ["index"];
+  protected $allowAnonymous = ["config"];
 
   public function actionConfig()
   {

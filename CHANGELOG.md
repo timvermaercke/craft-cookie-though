@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.0.1 - 2021-08-26
+
+### Changed
+
+- Use custom domain to pull the js bundle - [#1](https://github.com/timvermaercke/craft-cookie-though/pull/1)
+
 ## 1.0.0 - 2021-08-26
 
 ### Added

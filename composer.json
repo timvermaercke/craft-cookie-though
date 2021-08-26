@@ -2,7 +2,7 @@
   "name": "timvermaercke/cookie-though",
   "description": " Install and configure Cookie Though with ease.",
   "type": "craft-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "craft",
     "cms",
