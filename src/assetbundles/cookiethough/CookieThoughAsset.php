@@ -16,7 +16,7 @@ class CookieThoughAsset extends AssetBundle
     ];
 
     $this->js = [
-      "https://unpkg.com/cookie-though@1.2.0",
+      "https://cookiethough.dev/lib/1.2.0",
       "js/CookieThough.js",
     ];
 
