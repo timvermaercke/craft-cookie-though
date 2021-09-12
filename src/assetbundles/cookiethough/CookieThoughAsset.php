@@ -11,10 +11,6 @@ class CookieThoughAsset extends AssetBundle
   {
     $this->sourcePath = "@timvermaercke/cookiethough/assetbundles/cookiethough/dist";
 
-    $this->depends = [
-      CpAsset::class,
-    ];
-
     $this->js = [
       "https://cookiethough.dev/lib/1.2.0",
       "js/CookieThough.js",

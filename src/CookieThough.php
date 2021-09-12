@@ -10,7 +10,7 @@ use timvermaercke\cookiethough\assetbundles\cookiethough\CookieThoughAsset;
 class CookieThough extends Plugin
 {
   public static $plugin;
-  public $schemaVersion = "1.0.2";
+  public $schemaVersion = "1.0.3";
   public $hasCpSettings = true;
   public $hasCpSection = false;
 
