@@ -2,7 +2,7 @@
 
 Install and configure [Cookie Though](https://cookiethough.dev/) with ease.
 
-This plugin provides support for the installation and the configuration of Cookie Though. It provides the latest version of Cookie Though, it saves preferences in CraftCMS and exposes those to the Cookie Though instance.
+This plugin provides support for the installation and the configuration of Cookie Though. It provides the latest version of Cookie Though, it saves preferences in CraftCMS and exposes those to the Cookie Though instance, that is being used with the CDN implementation. A global variable `CookieThough` is available to trigger more features of CookieThough.
 
 It doesn’t implement the cookies, so implementing the cookies is **up to you**!
 
