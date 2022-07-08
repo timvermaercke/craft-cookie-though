@@ -1,4 +1,4 @@
-# Cookie Though plugin for Craft CMS 3.x
+# Cookie Though plugin for Craft CMS 4.x
 
 Install and configure [Cookie Though](https://cookiethough.dev/) with ease.
 
@@ -14,7 +14,7 @@ This plugin doesn't provide support for styling, as that's something that you sh
 
 ## Requirements
 
-This plugin requires Craft CMS 3.0.0-beta.23 or later.
+This plugin requires Craft CMS 4.0.0 or later.
 
 ## Installation
 
